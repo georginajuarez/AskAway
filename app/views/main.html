@@ -1,14 +1,33 @@
-<div class="jumbotron">
+<div ng-app class="jumbotron" ng-controller="MainCtrl">
   <h1>Yay or Nay!</h1>
   <!-- Min, Max, or remove jumbotrom -->
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+  <!-- S1 <img src="images/yeoman.png" alt="Cute Red Monkey"><br>
     Ask away!
-  </p>
+  </p> E1 -->
+  <!-- VIEW API DATA HERE -->
+  <!-- S2
   <p><a class="btn btn-lg btn-success" ng-href="#/">Tell Me! <span class="glyphicon glyphicon-ok"></span></a></p>
+  E2 -->
 </div>
 
-<div class="row marketing">
+<div class="card">
+  <img class="card-img" src="/images/y_n_tv.png" alt="tv image">
+  <div class="card-img-overlay">
+    <p class="card-text">I'm text that has a background image!</p>
+    <p>{{tellMe.force}}</p>
+  </div>
+</div>
+
+
+<div>
+  <p>
+    <label>Ask away!:
+      <input type="text">
+    </label>
+    <button class="btn btn-xs btn-primary" ng-click="refreshCurrent()">Tell Me! <span class="glyphicon glyphicon-ok"></span></button>
+  </p>
+
   <h4>How to use app</h4>
-  <!-- Add input field ex. <p>Name: <input type="text" ng-model="name"></p> next to submit button. Remove current class in this div. -->
+  <!-- ADD INPUT FIELD ex. <p>Name: <input type="text" ng-model="name"></p> NEXT TO SUBMIT BUTTON. REMOVE CURRENT CLASS IN THIS DIV. -->
 </div>
