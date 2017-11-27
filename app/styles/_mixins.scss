@@ -1,0 +1,8 @@
+//MIXINS FOR APP
+@mixin bgImage($image, $height: 100vh, $bgPos: center center) {
+  background: url($image);
+  background-repeat: no-repeat;
+  background-position: $bgPos;
+  background-size: cover;
+  height: $height;
+}

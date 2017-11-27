@@ -1,28 +1,16 @@
 <div ng-app class="jumbotron" ng-controller="MainCtrl">
-  <h1>Yay or Nay!</h1>
-  <!-- Min, Max, or remove jumbotrom -->
-  <p class="lead">
-  <!-- S1 <img src="images/yeoman.png" alt="Cute Red Monkey"><br>
-    Ask away!
-  </p> E1 -->
-  <!-- VIEW API DATA HERE -->
-  <!-- S2
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Tell Me! <span class="glyphicon glyphicon-ok"></span></a></p>
-  E2 -->
+  <h1>Yay or Nay!{{ tellMe.answer }} {{ tellMe.forced }} {{ tellMe.image }}</h1>
+  <!-- PUT API DATA HERE, IN JUMBOTRON -->
+
 </div>
 
-<div class="card">
-  <img class="card-img" src="/images/y_n_tv.png" alt="tv image">
-  <div class="card-img-overlay">
-    <p class="card-text">I'm text that has a background image!</p>
-    <p>{{tellMe.force}}</p>
-  </div>
+<div class="main-monkey">
+<!-- NADA GOES HERE-->
 </div>
-
 
 <div>
   <p>
-    <label>Ask away!:
+    <label>Ask away!
       <input type="text">
     </label>
     <button class="btn btn-xs btn-primary" ng-click="refreshCurrent()">Tell Me! <span class="glyphicon glyphicon-ok"></span></button>

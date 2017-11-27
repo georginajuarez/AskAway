@@ -15,22 +15,16 @@ angular.module('askAwayApp')
 
     // Public API here
     return $resource('https://yesno.wtf/api', {}, {
-      get: {
-        method:'GET',
-        params:{
-          force: null
-    /*
-          "answer": "yes",
-          "forced": false,
-          "image": "https://yesno.wtf/assets/yes/2.gif" */
-        },
-        isArray:false
-      }
+
+
     });
   });
 
 
-
+  /*    YESNO PARAMS
+        "answer": "yes",
+        "forced": false,
+        "image": "https://yesno.wtf/assets/yes/2.gif" */
 
   /*
   PER ANGULARJS DOCUMENTATION (https://docs.angularjs.org/api/ngResource/service/$resource)

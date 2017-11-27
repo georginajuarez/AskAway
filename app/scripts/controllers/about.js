@@ -1,5 +1,5 @@
 'use strict';
-
+//DON'T REALLY NEED THIS CTRL, YET
 /**
  * @ngdoc function
  * @name askAwayApp.controller:AboutCtrl

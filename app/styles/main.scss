@@ -3,6 +3,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+//IMPORT STYLE PARTIALS
+@import "variables";
+@import "mixins";
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,6 +16,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  background-color: $main-bg;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -51,11 +56,16 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+}
 
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+//MAIN BACKGROUND IMAGE
+.main-monkey {
+  @include bgImage('../images/main-monkey.png');
+}
+
+//ABOUT BACKGROUND IMAGE
+.about-monkey {
+  @include bgImage('../images/excited-monkey.png', 100vh, right center);
 }
 
 /* Supporting marketing content */

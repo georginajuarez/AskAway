@@ -9,14 +9,20 @@
  */
 angular.module('askAwayApp')
   .controller('MainCtrl', function ($scope, tellMe) {
-    $scope.tellMe = tellMe.get();
-
-    $scope.refreshCurrent = function(){
-      $scope.tellMe = tellMe.get({
-        force: $scope.force
-      });
-    };
+    $scope.tellMe = tellMe.query();
 
   });
 
 //SHOULD GIVE ACCESS TO {{tellMe}} VARIABLE IN VIEWS DIRECTORY
+
+/*
+angular.module('askAwayApp')
+  .controller('MainCtrl', function ($scope, tellMe) {
+    $scope.tellMe = tellMe.get();
+
+$scope.refreshCurrent = function(){
+  $scope.tellMe = tellMe.get({
+    force: $scope.force
+  });
+};
+*/
