@@ -1,5 +1,7 @@
 <div ng-app class="jumbotron" ng-controller="MainCtrl">
-  <h1>Yay or Nay!{{ tellMe.answer }} {{ tellMe.forced }} {{ tellMe.image }}</h1>
+  <!-- Yay or Nay! -->
+  <h1><img ng-src="{{ tellMe.image }}" /></h1>
+  <h1>{{ tellMe.answer }}</h1>
   <!-- PUT API DATA HERE, IN JUMBOTRON -->
 
 </div>
@@ -8,7 +10,9 @@
 <!-- NADA GOES HERE-->
 </div>
 
-<div>
+<div class="row">
+<!-- ADD ROW.COLUMN.12 TO THIS DIV -->
+<div class="ask-me">
   <p>
     <label>Ask away!
       <input type="text">
@@ -16,6 +20,9 @@
     <button class="btn btn-xs btn-primary" ng-click="refreshCurrent()">Tell Me! <span class="glyphicon glyphicon-ok"></span></button>
   </p>
 
-  <h4>How to use app</h4>
   <!-- ADD INPUT FIELD ex. <p>Name: <input type="text" ng-model="name"></p> NEXT TO SUBMIT BUTTON. REMOVE CURRENT CLASS IN THIS DIV. -->
+</div>
+</div> <!-- FOR CLASS:ROW -->
+<div>
+  <h4>How to use app</h4>
 </div>

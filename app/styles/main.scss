@@ -29,6 +29,7 @@ body {
 
 /* Custom page header */
 .header {
+  background-color: $main-color;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 
@@ -39,6 +40,11 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
   }
+}
+
+//ASK-ME SECTION
+.ask-me {
+  background-color: $monkey-red;
 }
 
 /* Custom page footer */
