@@ -11,12 +11,18 @@ angular.module('askAwayApp')
   .controller('MainCtrl', function ($scope, tellMe) {
     $scope.tellMe = tellMe.query();
 
-    //SHOULD CHANGE IMAGE AND RESPONSE WHEN NEW INQUIRY IS ANSWERED
-    $scope.refreshCurrent = function(){
+    //SHOULD CHANGE IMAGE AND RESPONSE WHEN NEW INQUIRY IS ANSWERED: MAY NEED TO SWITCH FOR .RELOAD()
+    /*$scope.refreshTellMe = function(){
         $scope.tellMe = tellMe.query({
-            query: $scope.query
+            image: $scope.image,
+            answer: $scope.answer
         });
     };
+    */
+
+    //RELOADS PAGE WHEN CLICK TELL ME! BUTTON -- NEED TO FIX CONTROLLER THIS IS A TEMPORARY SOLUTION
+    $scope.reloadPage = function(){window.location.reload();};
+
 
   });
 

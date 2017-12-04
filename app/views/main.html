@@ -1,9 +1,8 @@
 <div ng-app class="jumbotron" ng-controller="MainCtrl">
   <!-- Yay or Nay! -->
-  <h1><img ng-src="{{ tellMe.image }}" /></h1>
-  <h1>{{ tellMe.answer }}</h1>
+  <h1><img class="mainPic" ng-src="{{ tellMe.image }}" alt="yes or no response image"/></h1>
+  <h1 class="jumbo-answer">{{ tellMe.answer }}</h1>
   <!-- PUT API DATA HERE, IN JUMBOTRON -->
-
 </div>
 
 <div class="main-monkey">
@@ -15,14 +14,23 @@
 <div class="ask-me">
   <p>
     <label>Ask away!
-      <input type="text">
+      <input type="text" name="question" placeholder="Should I...">
     </label>
-    <button class="btn btn-xs btn-primary" ng-click="refreshCurrent()">Tell Me! <span class="glyphicon glyphicon-ok"></span></button>
+    <button class="btn btn-primary" type="button" ng-click="reloadPage();">Tell Me! <span class="glyphicon glyphicon-ok"></span></button>
   </p>
 
-  <!-- ADD INPUT FIELD ex. <p>Name: <input type="text" ng-model="name"></p> NEXT TO SUBMIT BUTTON. REMOVE CURRENT CLASS IN THIS DIV. -->
 </div>
 </div> <!-- FOR CLASS:ROW -->
-<div>
-  <h4>How to use app</h4>
+
+<div class="tell-me-how">
+  <h4>Got a question? Great! Here's how to ask --</h4>
+  <p>Keep in mind that I don't have all the answers in the universe
+     but I can help you make your mind up.</p>
+       <dl>
+         <dt>Ask me stuff, like...</dt>
+         <dd>- Should I eat another cookie?</dd>
+         <dd>- Thai for dinner?</dd>
+         <dd>- Netflix and chill?</dd>
+         <dd>- Do I want to go out on the town?</dd>
+       </dl>
 </div>

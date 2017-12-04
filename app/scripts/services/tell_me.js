@@ -18,9 +18,9 @@ angular.module('askAwayApp')
      query: {
        method:'GET',
        params:{
-         "answer": 'yes',
-         "forced": false,
-         "image": "https://yesno.wtf/assets/yes/2.gif"
+         answer: 'yes',
+         forced: false,
+         image: 'https://yesno.wtf/assets/yes/2.gif'
        },
        isArray:false
      }

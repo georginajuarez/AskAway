@@ -33,22 +33,35 @@ body {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 
-  /* Make the masthead heading the same height as the navigation */
+  /* Make the masthead heading the same height as the navigation *
   h3 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
   }
+  */
+}
+
+img.mainPic {
+  width: 75%;
+  height: 5em;
+}
+
+//CENTERS TEXT- ALONG W/.JUMBOTRON AT BOTTOM
+h1.jumbo-answer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 //ASK-ME SECTION
-.ask-me {
-  background-color: $monkey-red;
-}
+
 
 /* Custom page footer */
 .footer {
+  background-color: $nav-color;
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
@@ -58,20 +71,22 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
+/* MAIN SCREEN SMALL */
 .jumbotron {
+  position: relative;
+  color: $main-color;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
 //MAIN BACKGROUND IMAGE
 .main-monkey {
-  @include bgImage('../images/main-monkey.png');
+  @include bgImage('../images/main-monkey-sq.png');
 }
 
 //ABOUT BACKGROUND IMAGE
 .about-monkey {
-  @include bgImage('../images/excited-monkey.png', 100vh, right center);
+  @include bgImage('../images/excited-monkey-sq.png', 100vh, right center);
 }
 
 /* Supporting marketing content */
@@ -102,6 +117,9 @@ body {
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
+    position: relative;
+    text-align: center;
+    color: white;
     border-bottom: 0;
   }
 }
