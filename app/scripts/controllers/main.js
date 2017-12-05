@@ -12,10 +12,10 @@ angular.module('askAwayApp')
     $scope.tellMe = tellMe.query();
 
     //SHOULD CHANGE IMAGE AND RESPONSE WHEN NEW INQUIRY IS ANSWERED: MAY NEED TO SWITCH FOR .RELOAD()
-    /*$scope.refreshTellMe = function(){
+  /*  $scope.refreshResponse = function(){
         $scope.tellMe = tellMe.query({
-            image: $scope.image,
-            answer: $scope.answer
+            'answer': $scope.answer,
+            'image': $scope.image
         });
     };
     */

@@ -1,27 +1,42 @@
-<div ng-app class="jumbotron" ng-controller="MainCtrl">
-  <!-- Yay or Nay! -->
-  <h1><img class="mainPic" ng-src="{{ tellMe.image }}" alt="yes or no response image"/></h1>
-  <h1 class="jumbo-answer">{{ tellMe.answer }}</h1>
-  <!-- PUT API DATA HERE, IN JUMBOTRON -->
+<!-- LOADING PAGE VIEW -->
+<div ng-app ng-controller="MainCtrl">
+  <!-- API DATA HERE: DELETED JUMBOTRON -->
+  <div class="answer">
+    <label class="sr-only" for="image">Yes or no gif/image</label>
+    <h1 class="mainPic"><img ng-src="{{ tellMe.image }}" alt="yes or no response image"/></h1>
+    <label class="sr-only" for="answer">Yes or no answer</label>
+    <h1 class="main-answer">{{ tellMe.answer }}</h1>
+  </div>
 </div>
 
-<div class="main-monkey">
-<!-- NADA GOES HERE-->
-</div>
+<br>
 
-<div class="row">
-<!-- ADD ROW.COLUMN.12 TO THIS DIV -->
 <div class="ask-me">
+  <form>
+    <label class="sr-only" for="question">Enter a yes or no question:</label>
+      <div class="input-group input-group-lg col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+        <input type="text" class="form-control" name="question" maxlength="50" placeholder="Yay or Nay? Ask away...">
+        <div class="input-group-btn">
+          <button class="btn btn-default btn-primary" type="submit" ng-click="reloadPage()"><i class="glyphicon glyphicon-ok"></i></button>
+        </div>
+      </div>
+    </form>
+ <!-- FORMER BUTTON. INPUT LOOKS BETTER.
   <p>
     <label>Ask away!
-      <input type="text" name="question" placeholder="Should I...">
+      <input type="text" class="input-ask"  placeholder="Should I...">
     </label>
-    <button class="btn btn-primary" type="button" ng-click="reloadPage();">Tell Me! <span class="glyphicon glyphicon-ok"></span></button>
+    <button class="btn btn-primary" type="button" ng-click="reloadPage()">Tell Me! <span class="glyphicon glyphicon-ok"></span></button>
   </p>
-
+  -->
 </div>
-</div> <!-- FOR CLASS:ROW -->
 
+<!-- MONKEY BG IMAGE -->
+<div class="main-monkey">
+<!-- NADA GOES HERE -->
+</div>
+
+<!-- HOW TO ASK QUESTION SECTION -->
 <div class="tell-me-how">
   <h4>Got a question? Great! Here's how to ask --</h4>
   <p>Keep in mind that I don't have all the answers in the universe
