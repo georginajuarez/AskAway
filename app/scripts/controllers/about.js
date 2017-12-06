@@ -7,6 +7,7 @@
  * # AboutCtrl
  * Controller of the askAwayApp
  */
+/*
 angular.module('askAwayApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
@@ -15,3 +16,4 @@ angular.module('askAwayApp')
       'Karma'
     ];
   });
+*/
